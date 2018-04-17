@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for stock project
+# Scrapy settings for decorate project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'stock'
+BOT_NAME = 'decorate'
 
-SPIDER_MODULES = ['stock.spiders']
-NEWSPIDER_MODULE = 'stock.spiders'
+SPIDER_MODULES = ['decorate.spiders']
+NEWSPIDER_MODULE = 'decorate.spiders'
+
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'stock (+http://www.yourdomain.com)'
-USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+#USER_AGENT = 'decorate (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'stock.middlewares.StockSpiderMiddleware': 543,
+#    'decorate.middlewares.DecorateSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'stock.middlewares.MyCustomDownloaderMiddleware': 543,
+#    'decorate.middlewares.MyCustomDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'stock.pipelines.StockPipeline': 300,
+#    'decorate.pipelines.DecoratePipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -88,6 +88,3 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
-
-FEED_URI = u'./stock.csv'
-FEED_FORMAT = 'CSV'
